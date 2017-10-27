@@ -1,8 +1,11 @@
+version: '2'
+
 services:
   frp:
-    image: getnas/frp:latest
+    image: getnas/frp
     ports:
       - "7000:7000"
       - "6000:6000"
+      - "8081:8081"
     volumes:
-      - ~/frp/:/etc/frp
+      - /home/herald/frp/:/etc/frp
