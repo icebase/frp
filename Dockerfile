@@ -5,7 +5,7 @@ LABEL maintainer="Herald Yu <yuhr123@gmail.com>"
 RUN apk add --update curl jq \
     && rm -rf /var/cache/apk/*
 
-ENV release=
+ENV release=v0.20.0
 
 RUN set -x \
     && mkdir /frp \
